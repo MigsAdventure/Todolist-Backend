@@ -70,7 +70,6 @@ exports.filterIsComplete = function(req, cb) {
   exports.getAll((err, tasks)  => {
     if(err) return cb(err);
     let booleanState = req.query.complete;
-    console.log('boolstate:',booleanState)
     let completeState = tasks.filter(task => {
         let state = task.isComplete;
           if (state === booleanState) {
