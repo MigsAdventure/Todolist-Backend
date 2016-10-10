@@ -42,14 +42,6 @@ app.delete('/todos/:id', (req, res) => {
  res.send('deleted task');
 }) 
 
-app.delete('/todos/complete', (req, res) => {
-  Task.delete(req, err => {
-  if(err) return res.status(400).send(err);
- });
- res.send('deleted task');
-}) 
-
-
 app.put('/todos/:id', (req,res) => {
   Task.update(req, (err, updatedTask) => {
     if(err) return res.status(400).send(err);
@@ -57,7 +49,6 @@ app.put('/todos/:id', (req,res) => {
   })
   
 })
-
 
 app.listen(PORT, err => {
   console.log(err || `Express listening on port ${PORT}`);

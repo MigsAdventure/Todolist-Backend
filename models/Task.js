@@ -51,7 +51,6 @@ exports.delete = function(req, cb){
   })
 }
 
-
 exports.update = function(req, cb) {
   exports.getAll((err, tasks) => {
     let taskId = req.params.id;
