@@ -1,0 +1,21 @@
+{
+  "name": "TodoList Backend",
+  "version": "1.0.0",
+  "description": "",
+  "main": "app.js",
+  "scripts": {
+    "start": "node app.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "Miguel Pardo",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.15.2",
+    "express": "^4.14.0",
+    "lodash": "^4.16.4",
+    "moment": "^2.15.1",
+    "morgan": "^1.7.0",
+    "uuid": "^2.0.3"
+  }
+}
