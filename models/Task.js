@@ -57,7 +57,7 @@ exports.update = function(req, cb) {
     let taskId = req.params.id;
     let updatedtasks = tasks.map(task => {
       if(taskId === task.id) {
-        task.isComplete === false ? task.isComplete = true : task.isComplete = false
+        task.isComplete === "false" ? task.isComplete = "true" : task.isComplete = "false"
       }
       return task
     })
