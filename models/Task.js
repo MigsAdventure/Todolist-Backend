@@ -47,7 +47,6 @@ exports.delete = function(req, cb){
         return task;
       }
     })
-    console.log('newTasks:', newtasks)
     exports.write(newtasks, cb)
   })
 }
@@ -77,6 +76,8 @@ exports.filterIsComplete = function(req, cb) {
         let state = task.isComplete;
           if (state === booleanState) {
           return task
+      } else if (!booleanState) {
+        return task;
       }
     })
     

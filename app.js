@@ -14,12 +14,7 @@ app.use(bodyParser.urlencoded({extended: true}));
 
 //ROUTES
 
-// app.get('/todos', (req, res) => {
-//   Task.getAll((err, tasks) => {
-//     if (err) return res.status(400).send(err);
-//     res.send(tasks);
-//   })
-// });
+
 
 app.get('/todos?', (req,res) => {
   
